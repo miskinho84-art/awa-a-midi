@@ -1,0 +1,18 @@
+# Dépendances
+node_modules
+
+# Build de production (régénéré avec `npm run build`)
+dist
+
+# Images optimisées (régénérées automatiquement par `npm run build` / `npm run images`)
+src/assets/images/optimized
+
+# Divers
+.DS_Store
+Thumbs.db
+*.log
+.env
+.env.*
+.vscode/*
+!.vscode/extensions.json
+.idea
