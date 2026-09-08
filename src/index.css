@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+/* =========================================================
+   🎨 THÈME AWA À MIDI — Tailwind v4
+   Couleurs chaudes & gourmandes : terracotta, vert profond,
+   crème, brun cacao.
+   ========================================================= */
+@theme {
+  --font-display: "Fraunces", "Georgia", "Times New Roman", serif;
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  /* Petit point de rupture pour les très petits téléphones (< 400px) */
+  --breakpoint-xs: 25rem;
+
+  /* Terracotta / orange — couleur principale */
+  --color-terracotta-50: #fdf5f0;
+  --color-terracotta-100: #fbe7db;
+  --color-terracotta-200: #f6cbb4;
+  --color-terracotta-300: #f0a683;
+  --color-terracotta-400: #ea7b50;
+  --color-terracotta-500: #e4572e;
+  --color-terracotta-600: #c9441f;
+  --color-terracotta-700: #a6361a;
+  --color-terracotta-800: #862d19;
+  --color-terracotta-900: #6e2717;
+
+  /* Vert profond — couleur secondaire */
+  --color-forest-50: #eef6f0;
+  --color-forest-100: #d6eadb;
+  --color-forest-200: #aed5b8;
+  --color-forest-300: #7cb88c;
+  --color-forest-400: #4e9663;
+  --color-forest-500: #2f7a47;
+  --color-forest-600: #236139;
+  --color-forest-700: #1d4d2f;
+  --color-forest-800: #183d27;
+  --color-forest-900: #12301f;
+
+  /* Crème / beige — surfaces */
+  --color-cream-50: #fffcf7;
+  --color-cream-100: #fdf6eb;
+  --color-cream-200: #f8ead5;
+  --color-cream-300: #f1dcbd;
+  --color-cream-400: #e6c89c;
+
+  /* Brun cacao — textes */
+  --color-cocoa-500: #8a5a41;
+  --color-cocoa-600: #6b4632;
+  --color-cocoa-700: #4a2c1e;
+  --color-cocoa-800: #3a2118;
+  --color-cocoa-900: #2c1812;
+
+  /* Ombres */
+  --shadow-lift: 0 10px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --shadow-soft: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+}
+
+/* Base */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-cream-50);
+  color: var(--color-cocoa-800);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Utilitaires */
+.font-display {
+  font-family: var(--font-display);
+}
